@@ -8,7 +8,7 @@ interface HeaderProps {
   openModal: () => void;
 }
 
-export function Header({ openModal }: HeaderProps) {
+const Header = ({ openModal }: HeaderProps): JSX.Element => {
   return (
     <Container>
       <header>
@@ -26,6 +26,6 @@ export function Header({ openModal }: HeaderProps) {
       </header>
     </Container>
   );
-}
+};
 
 export default Header;
