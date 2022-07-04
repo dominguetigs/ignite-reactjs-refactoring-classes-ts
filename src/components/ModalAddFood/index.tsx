@@ -7,17 +7,17 @@ import Input from '../Input';
 
 import { Form } from './styles';
 
-interface ModalAddFoodProps {
-  isOpen: boolean;
-  setIsOpen: () => void;
-  handleAddFood: (data: any) => void;
-}
-
 interface ModalAddFoodDataProps {
   description: string;
   image: string;
   name: string;
   price: string;
+}
+
+interface ModalAddFoodProps {
+  isOpen: boolean;
+  setIsOpen: () => void;
+  handleAddFood: (data: ModalAddFoodDataProps) => void;
 }
 
 const ModalAddFood = ({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodProps): JSX.Element => {
